@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Energía Humana & Tecnología C.A. - Servicios Corporativos</title>
+    <!-- Incluimos Tailwind CSS para un diseño moderno y responsive -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        /* Estilos personalizados para los colores de EHTCA */
+        :root {
+            --color-primary: #00A349; /* Verde de la marca */
+            --color-secondary: #8B6D3B; /* Dorado/Marrón de la marca */
+            --color-text: #1f2937; /* Gris oscuro para el texto */
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--color-text);
+            background-color: #f7f7f7;
+        }
+
+        /* Estilo para el gradiente de la sección principal */
+        .hero-gradient {
+            background: linear-gradient(135deg, var(--color-primary) 0%, #307a51 50%, var(--color-secondary) 100%);
+        }
+
+        /* Estilo para los botones de la marca */
+        .btn-primary {
+            background-color: var(--color-primary);
+            color: white;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Estilos para las tarjetas de servicios (Infografía) */
+        .service-card {
+            border-bottom: 5px solid var(--color-primary);
+            transition: all 0.3s ease;
+        }
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Animación de carga para el formulario (Mantenida por si acaso) */
+        .spinner {
+            border: 4px solid rgba(255, 255, 255, 0.3);
+            border-top: 4px solid #fff;
+            border-radius: 50%;
+            width: 24px;
+            height: 24px;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Sección Principal (Hero) -->
+    <header class="hero-gradient text-white py-16 md:py-24 rounded-b-3xl shadow-xl">
+        <div class="container mx-auto px-6 text-center">
+            <!-- Logo Placeholder/Text -->
+            <div class="mb-6">
+                <span class="text-3xl font-extrabold tracking-wider bg-white text-gray-800 px-4 py-2 rounded-full shadow-lg"
+                      style="color: var(--color-primary);">EHTCA</span>
+            </div>
+            
+            <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4">
+                Energía Humana & Tecnología C.A.
+            </h1>
+            <p class="text-xl md:text-2xl mb-8 font-light">
+                Potenciando tu Capital Humano y Digital
+            </p>
+            
+            <a href="#contacto" class="btn-primary inline-block text-lg px-8 py-3 rounded-full font-bold uppercase tracking-wider">
+                Solicita una Consultoría Gratuita
+            </a>
+            <p class="mt-4 text-sm opacity-80">RIF: J-50232196-9</p>
+        </div>
+    </header>
+
+    <!-- Sección de Quiénes Somos (Misión) -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6 max-w-4xl text-center">
+            <h2 class="text-3xl font-bold mb-4 text-gray-800">
+                Tu Aliado Estratégico en Venezuela
+            </h2>
+            <p class="text-lg text-gray-600 mb-8">
+                Somos una organización dedicada a potenciar el capital humano y proveer soluciones tecnológicas integrales para su empresa, con base en Santa Rita, Zulia.
+            </p>
+            <div class="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-8">
+                <p class="font-semibold text-lg text-gray-700 p-4 border-l-4 border-r-4 rounded-lg" style="border-color: var(--color-secondary);">
+                    Administración de personal
+                </p>
+                <p class="font-semibold text-lg text-gray-700 p-4 border-l-4 border-r-4 rounded-lg" style="border-color: var(--color-secondary);">
+                    Compra y venta de equipos de tecnología
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Servicios (Infografía Estilizada) -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-extrabold text-center mb-12">Nuestros Servicios Fundamentales</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                
+                <!-- Tarjeta 1: Gestión de Talento -->
+                <div class="service-card bg-white p-6 rounded-xl shadow-lg">
+                    <div class="text-5xl mb-4 text-center" style="color: var(--color-primary);">
+                        <!-- Icono de Usuario y Engranaje (Lucide: UsersGear) -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mx-auto"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 10V6a2 2 0 0 0-2-2h-4"/><path d="M22 14v4a2 2 0 0 1-2 2h-4"/><path d="M22 17h-4a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h4"/></svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-center" style="color: var(--color-primary);">Gestión de Talento</h3>
+                    <ul class="text-gray-600 space-y-2 list-none pl-0">
+                        <li class="flex items-start"><span class="mr-2" style="color: var(--color-secondary);">•</span> Búsqueda y selección de personal (Pruebas Psicológicas).</li>
+                        <li class="flex items-start"><span class="mr-2" style="color: var(--color-secondary);">•</span> Exámenes médicos ocupacionales (Pre/Post Empleo y Vacacional).</li>
+                        <li class="flex items-start"><span class="mr-2" style="color: var(--color-secondary);">•</span> Elaboración de notificaciones de riesgos y Kit Ingreso.</li>
+                    </ul>
+                </div>
+
+                <!-- Tarjeta 2: Administración y Nómina -->
+                <div class="service-card bg-white p-6 rounded-xl shadow-lg">
+                    <div class="text-5xl mb-4 text-center" style="color: var(--color-primary);">
+                        <!-- Icono de Dinero en Documento (Lucide: FileText) -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mx-auto"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M8 12h8"/><path d="M8 16h5"/><path d="M12 20h4"/></svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-center" style="color: var(--color-primary);">Administración y Nómina</h3>
+                    <ul class="text-gray-600 space-y-2 list-none pl-0">
+                        <li class="flex items-start"><span class="mr-2" style="color: var(--color-secondary);">•</span> Generación de nóminas, recibos y TXT para pagos masivos.</li>
+                        <li class="flex items-start"><span class="mr-2" style="color: var(--color-secondary);">•</span> Gestión completa de Parafiscales (IVSS, FAOV, INCES, MT, INPSASEL).</li>
+                        <li class="flex items-start"><span class="mr-2" style="color: var(--color-secondary);">•</span> Auditoría Laboral y Evaluación de Estructuras de Costo Labor.</li>
+                    </ul>
+                </div>
+
+                <!-- Tarjeta 3: Salud y Seguridad Laboral -->
+                <div class="service-card bg-white p-6 rounded-xl shadow-lg">
+                    <div class="text-5xl mb-4 text-center" style="color: var(--color-primary);">
+                        <!-- Icono de Escudo y Corazón (Lucide: ShieldPlus) -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mx-auto"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M12 8v8"/><path d="M8 12h8"/></svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-center" style="color: var(--color-primary);">Salud y Seguridad Laboral</h3>
+                    <ul class="text-gray-600 space-y-2 list-none pl-0">
+                        <li class="flex items-start"><span class="mr-2" style="color: var(--color-secondary);">•</span> Comités de Seguridad y Salud Laboral (INPSASEL).</li>
+                        <li class="flex items-start"><span class="mr-2" style="color: var(--color-secondary);">•</span> Investigación y Reporte de Accidentes y Enfermedades laborales.</li>
+                        <li class="flex items-start"><span class="mr-2" style="color: var(--color-secondary);">•</span> Planes de Salud, Pólizas HCM y Consultoría Legal.</li>
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    
+    <!-- Sección de Contacto y Formulario (Captura de Leads) -->
+    <section id="contacto" class="py-16 md:py-24" style="background-color: var(--color-secondary);">
+        <div class="container mx-auto px-6 max-w-2xl">
+            <h2 class="text-4xl font-extrabold text-white text-center mb-4">
+                ¡Solicita Tu Cotización Ahora!
+            </h2>
+            <p class="text-white text-center mb-8 opacity-90">
+                Déjanos tus datos y un especialista te contactará en menos de 24 horas.
+            </p>
+
+            <!-- Contenedor del Formulario de HubSpot -->
+            <!-- HubSpot inyectará el formulario dentro de este div -->
+            <div id="hubspot-form-container" class="bg-white p-8 rounded-2xl shadow-2xl space-y-4">
+                <p class="text-center text-gray-500 italic">Cargando formulario de contacto...</p>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Sección de Footer/Datos de Contacto -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-xl font-bold mb-4">Contáctanos Directamente</p>
+            <div class="flex flex-col md:flex-row justify-center space-y-2 md:space-y-0 md:space-x-8 text-sm">
+                <a href="tel:+584246448077" class="hover:text-green-400">
+                    <span class="font-bold">Teléfonos:</span> 0424 6448077 | 0424 6186794
+                </a>
+                <a href="mailto:ehca2022@gmail.com" class="hover:text-green-400">
+                    <span class="font-bold">Correo:</span> ehca2022@gmail.com
+                </a>
+                <p>
+                    <span class="font-bold">Ubicación:</span> Santa Rita, Edo. Zulia, Venezuela.
+                </p>
+            </div>
+            <p class="mt-6 text-xs opacity-60">&copy; 2024 Energía Humana & Tecnología C.A. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Script de HubSpot Forms (v2) - Obligatorio para la carga del formulario -->
+    <!-- Se actualiza la URL para usar el protocolo https: explícito -->
+    <script charset="utf-8" type="text/javascript" src="https://js.hsforms.net/forms/v2.js"></script>
+    
+    <script>
+        // ----------------------------------------------------------------------
+        // PASO CRÍTICO: CONFIGURACIÓN Y CARGA ROBUSTA DEL FORMULARIO DE HUBSPOT
+        // ----------------------------------------------------------------------
+        
+        let attempts = 0;
+        // Aumentamos el máximo de intentos a 200 (20 segundos) para manejar entornos lentos.
+        const MAX_ATTEMPTS = 200; 
+        const RETRY_DELAY = 100; // 100 milisegundos
+
+        function loadHubSpotForm() {
+            const container = document.getElementById('hubspot-form-container');
+            
+            // IDs REALES DE HUBSPOT INSERTADOS:
+            const portalId = "50645520";
+            const formId = "10418730-fe73-4fef-b154-86b9a57adf16";
+
+            // 1. Verificar si la librería ya está disponible
+            if (typeof hbspt !== 'undefined') {
+                hbspt.forms.create({
+                    // La región por defecto es 'na1' (Norteamérica). 
+                    region: "na1", 
+                    portalId: portalId, // ID real insertado
+                    formId: formId,     // GUID real insertado
+                    target: '#hubspot-form-container', // ID del DIV donde se inyectará el formulario
+                });
+            } 
+            // 2. Polling: Si no está disponible y aún quedan intentos
+            else if (attempts < MAX_ATTEMPTS) {
+                // Si la librería no está lista, incrementamos el contador y reintentamos en 100ms.
+                attempts++;
+                setTimeout(loadHubSpotForm, RETRY_DELAY);
+            } 
+            // 3. Fallo Crítico de Carga de Librería
+            else {
+                console.error(`Fallo al cargar HubSpot después de ${MAX_ATTEMPTS} intentos. Total de espera: ${MAX_ATTEMPTS * RETRY_DELAY / 1000} segundos.`);
+                container.innerHTML = 
+                    '<div class="text-center text-xl font-bold text-red-700 p-6 border-4 border-red-300 rounded-lg bg-red-50">⚠️ Error Crítico: El formulario de HubSpot no se pudo cargar. <br><span class="font-normal text-sm">El fallo persiste. Asegúrate de que los IDs sean correctos y que tu red permita la carga del script `js.hsforms.net`.</span></div>';
+            }
+        }
+
+        // Ejecutar la función cuando el DOM esté completamente cargado.
+        document.addEventListener('DOMContentLoaded', loadHubSpotForm);
+    </script>
+</body>
+</html>
